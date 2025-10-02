@@ -74,12 +74,12 @@ systemd_setup(){
 
     systemctl daemon-reload
     systemctl enable $app_name &>>$LOG_FILE
-    VALIDATE $? "Enabling user"
+    VALIDATE $? "Enabling cart"
 }
 
 app_restart(){
-   systemctl start user
-   VALIDATE $? "Restarted user" 
+   systemctl start $app_name
+   VALIDATE $? "Restarted cart" 
 }
 
 print_total_time(){
