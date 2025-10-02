@@ -70,8 +70,8 @@ systemd_setup(){
 }
 
 app_restart(){
-   systemctl start catalogue
-   VALIDATE $? "Restarted catalogue" 
+   systemctl start user
+   VALIDATE $? "Restarted user" 
 }
 
 print_total_time(){
